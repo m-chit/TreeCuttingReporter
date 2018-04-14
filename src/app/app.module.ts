@@ -11,6 +11,8 @@ import { ProfileComponent } from './profile/profile.component';
 import {AppRoutingModule} from './app-routing.module';
 
 import {AuthService} from '../services/auth.service';
+import { NavbarComponent } from './navbar/navbar.component';
+import { TreesComponent } from './trees/trees.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import {AuthService} from '../services/auth.service';
     MainComponent,
     AdminComponent,
     ProfileComponent,
+    NavbarComponent,
+    TreesComponent,
   ],
   imports: [
     BrowserModule,

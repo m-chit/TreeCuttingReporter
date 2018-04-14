@@ -3,18 +3,25 @@ import {NgModule, OnInit} from '@angular/core';
 
 import {LoginComponent} from './login/login.component';
 import {MainComponent} from './main/main.component';
+import {AdminComponent} from './admin/admin.component';
+import {ProfileComponent} from './profile/profile.component';
+import {TreesComponent} from './trees/trees.component';
 
 
 
 const appRoutes: Routes = [
   {
-    path: '', component: LoginComponent
+    path: 'login', component: LoginComponent
   },
   {
-    path: 'main', component: MainComponent
+    path: '', component: MainComponent, children: [
+    {path: 'admin', component: AdminComponent},
+    {path: 'profile', component: ProfileComponent},
+    {path: '', component: TreesComponent},
+  ]
   },
   /*{path: 'not-found', component: NotFoundComponent},*/
-  {path: '**', redirectTo: ''}
+  {path: '**', redirectTo: 'login'}
 ];
 
 @NgModule({

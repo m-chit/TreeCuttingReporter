@@ -1,0 +1,12 @@
+<div class="navbar">
+  <button class="button-navbar" [routerLink]="['/']">
+    Trees
+  </button>
+  <button class="button-navbar" [routerLink]="['/profile']">
+    My profile
+  </button>
+  <button *ngIf="me && me.isAdmin" class="button-navbar" [routerLink]="['/admin']">
+    Admin panel
+  </button>
+
+</div>

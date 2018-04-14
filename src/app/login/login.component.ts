@@ -22,7 +22,7 @@ export class LoginComponent {
       response => {
         const token = response.json().token;
         localStorage.setItem('token', token);
-        this.router.navigate(['/main']);
+        this.router.navigate(['/']);
       }
     );
   }

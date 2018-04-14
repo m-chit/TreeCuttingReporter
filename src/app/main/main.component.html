@@ -1,6 +1,10 @@
+<app-navbar [me]="me">
 <p>
   main works!
 </p>
-<p *ngIf="me.isAdmin">
+
+
+
+<p *ngIf="me && me.isAdmin">
 YOLO
 </p>

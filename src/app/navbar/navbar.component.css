@@ -1,0 +1,19 @@
+.navbar {
+  padding: 0 30px;
+  display: flex;
+  width: 100vw;
+  height: 55px;
+  background-color: steelblue;
+}
+
+.button-navbar {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 0 10px;
+}
+
+.button-navbar:hover {
+  background-color: #fff;
+  color: steelblue;
+}

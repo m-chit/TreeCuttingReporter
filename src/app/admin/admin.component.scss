@@ -1,0 +1,38 @@
+.admin-panel {
+  border: solid 1px #d4d4d4;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  max-width: 80vw;
+  width: 80vw;
+  margin: 10px 0;
+  padding: 30px;
+  flex-direction: column;
+
+  .admin-panel-title {
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: #047009;
+  }
+  .user {
+    border: solid 1px #eeeeee;
+    margin-bottom: 10px;
+    .row {
+      display: flex;
+
+      .column {
+        padding: 10px;
+      }
+
+      .column-title {
+        @extend .column;
+        flex-basis: 20%;
+
+      }
+      .column-value {
+        @extend .column;
+        flex-basis: 80%;
+      }
+    }
+  }
+}

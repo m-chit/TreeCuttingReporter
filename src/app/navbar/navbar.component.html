@@ -1,11 +1,18 @@
 <div class="navbar">
-  <button class="button-navbar" [routerLink]="['/']">
-    Trees
-  </button>
-  <button class="button-navbar" [routerLink]="['/profile']">
-    My profile
-  </button>
-  <button *ngIf="me && me.isAdmin" class="button-navbar" [routerLink]="['/admin']">
-    Admin panel
-  </button>
+  <div class="left-navbar">
+    <button class="button-navbar" [routerLink]="['/']">
+      Tree cutting
+    </button>
+    <button class="button-navbar" [routerLink]="['/profile']">
+      My profile
+    </button>
+    <button *ngIf="me && me.isAdmin" class="button-navbar" [routerLink]="['/admin']">
+      Admin panel
+    </button>
+  </div>
+  <div class="right-navbar">
+    <button class="button-navbar button-navbar-log-out" [routerLink]="['/login']">
+      Log out
+    </button>
+  </div>
 </div>

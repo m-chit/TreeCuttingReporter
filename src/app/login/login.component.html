@@ -1,9 +1,11 @@
-<div>
+<div class="form-panel">
+
+
   <form
-    class="form-panel"
+    class="login"
   (ngSubmit)="onSubmit()"
   #f="ngForm">
-
+    <span class="form-title">Welcome to tree cutting reporter</span>
   <div class="btn-group">
     <input
       placeholder="Username"
@@ -20,6 +22,6 @@
       type="password">
   </div>
 
-  <button type="submit" >Log in</button>
+  <button class="button-log-in" type="submit" >Log in</button>
 </form>
 </div>

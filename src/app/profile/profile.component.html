@@ -1,3 +1,20 @@
-<p>
-  {{me && me.name}}
-</p>
+<div class="profile" *ngIf="me">
+  <span class="profile-title">Hello {{me.name}}, this is your data</span>
+  <div class="row">
+    <span class="column-title">Name:</span>
+    <span class="column-value">{{me.name}}</span>
+  </div>
+  <div class="row">
+    <span class="column-title">Email:</span>
+    <span class="column-value">{{me.email}}</span>
+  </div>
+  <div class="row">
+    <span class="column-title">Admin:</span>
+    <span class="column-value">{{me.isAdmin ? 'Yes' : 'No'}}</span>
+  </div>
+  <div class="row">
+    <span class="column-title">Username:</span>
+    <span class="column-value">{{me.username}}</span>
+  </div>
+</div>
+

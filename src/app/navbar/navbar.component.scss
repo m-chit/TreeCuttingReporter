@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  background-color: #09a510;
+
+  .button-navbar {
+    display: flex;
+    height: 100%;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 0 10px;
+
+    &:hover {
+      background-color: #05800a;
+      color: #fff;
+    }
+  }
+
+  .left-navbar {
+    height: 55px;
+    display: flex;
+    padding-left: 100px;
+  }
+
+  .right-navbar {
+    height: 55px;
+    display: flex;
+    padding-right: 100px;
+    .button-navbar-log-out {
+      @extend .button-navbar;
+      justify-self: flex-end;
+    }
+  }
+}
+

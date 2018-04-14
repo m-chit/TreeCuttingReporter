@@ -1,4 +1,105 @@
-<div class="trees" *ngFor="let tree of trees">
+
+<span class="report-title">Report tree cutting:</span>
+
+<form
+  class="report-form"
+  (ngSubmit)="onSubmit()"
+  #f="ngForm">
+    <span class="report-row">
+      <label class="label-report">Parcel Number:</label>
+      <input
+        class="input-report"
+        placeholder="parcelNumber"
+        name="parcelNumber"
+        ngModel
+        type="text">
+    </span>
+  <span class="report-row">
+      <label class="label-report">Street:</label>
+    <input
+      class="input-report"
+      placeholder="street"
+      name="street"
+      ngModel
+      type="text">
+  </span>
+  <span class="report-row">
+      <label class="label-report">Name:</label>
+  <input
+      class="input-report"
+      placeholder="name"
+      name="name"
+      ngModel
+      type="text"></span>
+  <span class="report-row">
+      <label class="label-report">Email:</label>
+    <input
+      class="input-report"
+      placeholder="email"
+      name="email"
+      ngModel
+      type="email"></span>
+  <span class="report-row">
+      <label class="label-report">Trees:</label>
+  <input
+    class="input-report"
+    placeholder="trees"
+    name="trees"
+    ngModel
+    type="text"></span>
+  <span class="report-row">
+      <label class="label-report">Longitude:</label>
+  <input
+    class="input-report"
+    placeholder="longitude"
+    name="longitude"
+    ngModel
+    type="text">
+  </span>
+  <span class="report-row">
+      <label class="label-report">Last Name:</label>
+  <input
+    class="input-report"
+    placeholder="lastName"
+    name="lastName"
+    ngModel
+    type="text">
+  </span>
+  <span class="report-row">
+      <label class="label-report">Precinct:</label>
+  <input
+    class="input-report"
+    placeholder="precinct"
+    name="precinct"
+    ngModel
+    type="text"></span>
+  <span class="report-row">
+      <label class="label-report">Latitude:</label>
+  <input
+    class="input-report"
+    placeholder="latitude"
+    name="latitude"
+    ngModel
+    type="text">
+  </span>
+  <span class="report-row">
+      <label class="label-report">Lodaction Desc:</label>
+  <input
+    class="input-report"
+    placeholder="locationDesc"
+    name="locationDesc"
+    ngModel
+    type="text">
+  </span>
+  <button class="button-submit" type="submit" >Report</button>
+
+  <span *ngIf="error._body">ERROR - {{error._body}}</span>
+  <span *ngIf="resp._body">SUCCESS</span>
+</form>
+
+<span class="report-title">Tree cutting:</span>
+
+<div class="trees" *ngFor="let tree of treesCut">
   <div class="tree-name">This is tree cutting name: {{tree.name}}</div>
   <div class="tree-id">ID tree cutting: {{tree.id}}</div>
 </div>

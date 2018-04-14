@@ -5,11 +5,11 @@
   width: 100vw;
   height: 100vh;
   flex-direction: column;
-  background: #ffffff url("https://www.birdlife.org/sites/default/files/styles/1600/public/bialowieza_forest_c_tomasz_wilk_0.jpg?itok=iXRoJtoL") no-repeat bottom center fixed;
+  background: #333 url("https://www.birdlife.org/sites/default/files/styles/1600/public/bialowieza_forest_c_tomasz_wilk_0.jpg?itok=iXRoJtoL") no-repeat bottom center fixed;
   background-size: cover;
 
   .login {
-background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 50px;
     border-radius: 10px;
     box-shadow: 0 0 20px #000;
@@ -37,6 +37,7 @@ background-color: rgba(0, 0, 0, 0.5);
         color: rgba(255, 255, 255, 0.74);
       }
     }
+
 
     .button-log-in {
       margin-top: 20px;

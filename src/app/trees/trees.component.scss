@@ -28,3 +28,49 @@
 
   }
 }
+
+.report-title {
+  color: #05800a;
+  font-size: 20px;
+}
+
+.report-form {
+ @extend .trees;
+  padding: 10px;
+  flex-direction: column;
+
+  .report-row {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    .label-report {
+      font-size: 12px;
+      display: flex;
+      justify-content: flex-end;
+      flex-basis: 20%;
+      padding-right: 20px;
+      color: #a3a3a3;
+    }
+    .input-report {
+      flex-basis: 80%;
+      border: solid 1px #eee;
+      border-radius: 4px;
+      padding: 10px;
+    }
+  }
+
+  .button-submit {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #09a510;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+
+    &:hover {
+      background-color: #0bc013;
+    }
+  }
+}

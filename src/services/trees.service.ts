@@ -26,4 +26,10 @@ export class TreesService {
       }
     ];
   }
+
+  putReport(body: any) {
+    const headers = new Headers({'X-AUTH-TOKEN': localStorage.getItem('token')});
+    const options = new RequestOptions({ headers: headers });
+    return this.http.put('https://api-pwd.housecode.pl/proposals', body, options);
+  }
 }

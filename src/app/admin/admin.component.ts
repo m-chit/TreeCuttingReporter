@@ -16,16 +16,7 @@ export class AdminComponent implements OnInit {
       response => {
         const resp = response.json();
         this.users = resp.content;
-        console.log("users", this.users)
       }
     );
-
-    this.userService.putUser().subscribe(
-      response => {
-        const resp = response.json();
-        console.log("put user", resp);
-      }
-    );
-
   }
 }

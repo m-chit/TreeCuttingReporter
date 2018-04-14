@@ -6,6 +6,7 @@ import {MainComponent} from './main/main.component';
 import {AdminComponent} from './admin/admin.component';
 import {ProfileComponent} from './profile/profile.component';
 import {TreesComponent} from './trees/trees.component';
+import {EditUserComponent} from './edit-user/edit-user.component';
 
 
 
@@ -16,6 +17,7 @@ const appRoutes: Routes = [
   {
     path: '', component: MainComponent, children: [
     {path: 'admin', component: AdminComponent},
+    {path: 'user/:id', component: EditUserComponent},
     {path: 'profile', component: ProfileComponent},
     {path: '', component: TreesComponent},
   ]

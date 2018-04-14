@@ -2,7 +2,7 @@
   <span class="admin-panel-title">All Users:</span>
   <span *ngFor="let user of users" >
 
-    <button class="button">Edit</button>
+    <button class="button" [routerLink]="['/user', user.id]">Edit</button>
 
     <div class="user">
       <div class="row">

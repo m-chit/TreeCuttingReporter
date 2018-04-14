@@ -15,6 +15,7 @@ import {UserService} from '../services/user.service';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TreesComponent } from './trees/trees.component';
 import {TreesService} from '../services/trees.service';
+import { EditUserComponent } from './edit-user/edit-user.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import {TreesService} from '../services/trees.service';
     ProfileComponent,
     NavbarComponent,
     TreesComponent,
+    EditUserComponent,
   ],
   imports: [
     BrowserModule,

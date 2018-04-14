@@ -18,7 +18,6 @@ export class ProfileComponent implements OnInit {
       response => {
         const resp = response.json();
         this.me = new UserModel(resp);
-        console.log("DdD", resp, this.me)
       }
     );
   }

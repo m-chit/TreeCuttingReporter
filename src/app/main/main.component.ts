@@ -17,10 +17,7 @@ export class MainComponent implements OnInit {
       response => {
         const resp = response.json();
        this.me = new UserModel(resp);
-       console.log("DD", resp, this.me)
       }
     );
   }
-
-
 }

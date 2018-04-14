@@ -1,0 +1,10 @@
+.trees {
+  border: solid 1px #707070;
+  background-color: #fff;
+  display: flex;
+  width: 80vw;
+  margin: 10px 0;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}

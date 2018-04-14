@@ -11,22 +11,19 @@ export class TreesService {
   getTrees() {
     const headers = new Headers({'X-AUTH-TOKEN': localStorage.getItem('token')});
     const options = new RequestOptions({ headers: headers });
-    this.http.get('https://api-pwd.housecode.pl/proposals', options).subscribe(response => console.log(response.json()));
+    return this.http.get(`${this.address}/proposals`, options);
   }
 
-  getMockTress() {
-    return {
-
-    }
+  getMockTrees() {
+    return [
+      {
+        name: 'Tree1',
+        id: 0
+      },
+      {
+        name: 'Tree2',
+        id: 1
+      }
+    ];
   }
-
-/*  signIn(body: { username: string, password: string }) {
-    return this.http.post(`${this.address}/tokens`, body);
-  }
-
-  getMy() {
-    const headers = new Headers({'X-AUTH-TOKEN': localStorage.getItem('token')});
-    const options = new RequestOptions({ headers: headers });
-    return this.http.get(`${this.address}/accounts/my`, options);
-  }*/
 }

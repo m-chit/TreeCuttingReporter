@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {TreesService} from '../../services/trees.service';
 
 @Component({
   selector: 'app-trees',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./trees.component.css']
 })
 export class TreesComponent implements OnInit {
-
-  constructor() { }
+  trees: any = [];
+  srakotop: any = [];
+  constructor(private treesService: TreesService) { }
 
   ngOnInit() {
-  }
+    this.treesService.getTrees().subscribe(
+      response => {
+        const resp = response.json();
+        this.trees = resp.content;
+        this.trees = [...this.trees, ...this.treesService.getMockTrees()];
+      }
+    );
 
+  }
 }

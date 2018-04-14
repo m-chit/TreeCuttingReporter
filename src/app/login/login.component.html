@@ -1,0 +1,25 @@
+<div>
+  <form
+    class="form-panel"
+  (ngSubmit)="onSubmit()"
+  #f="ngForm">
+
+  <div class="btn-group">
+    <input
+      placeholder="Username"
+      name="username"
+      ngModel
+      type="text">
+
+  </div>
+  <div class="btn-group">
+    <input
+      placeholder="Password"
+      name="password"
+      ngModel
+      type="password">
+  </div>
+
+  <button type="submit" >Log in</button>
+</form>
+</div>

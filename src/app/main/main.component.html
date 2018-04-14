@@ -1,10 +1,4 @@
-<app-navbar [me]="me">
-<p>
-  main works!
-</p>
-
-
-
-<p *ngIf="me && me.isAdmin">
-YOLO
-</p>
+<app-navbar [me]="me"></app-navbar>
+<div class="main">
+  <router-outlet></router-outlet>
+</div>

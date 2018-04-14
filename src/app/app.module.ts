@@ -11,6 +11,7 @@ import { ProfileComponent } from './profile/profile.component';
 import {AppRoutingModule} from './app-routing.module';
 
 import {AuthService} from '../services/auth.service';
+import {UserService} from '../services/user.service';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TreesComponent } from './trees/trees.component';
 
@@ -30,7 +31,7 @@ import { TreesComponent } from './trees/trees.component';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [AuthService],
+  providers: [AuthService, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

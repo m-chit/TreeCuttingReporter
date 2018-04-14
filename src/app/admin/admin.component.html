@@ -1,3 +1,5 @@
-<p class="admin">
-  admin works!
-</p>
+<div class="admin">
+  <ul>
+    <li *ngFor="let user of users">{{user.name}} - {{user.lastName}} - {{user.isAdmin}}</li>
+  </ul>
+</div>

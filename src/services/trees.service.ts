@@ -3,35 +3,24 @@ import {Http, Headers, RequestOptions} from '@angular/http';
 
 
 @Injectable()
-export class UserService {
+export class TreesService {
   address = 'https://api-pwd.housecode.pl';
 
   constructor(private http: Http) {}
 
-  getAllUsers() {
-    console.log("dupa")
+  getTrees() {
     const headers = new Headers({'X-AUTH-TOKEN': localStorage.getItem('token')});
     const options = new RequestOptions({ headers: headers });
-    return this.http.get(`${this.address}/accounts`, options);
+    this.http.get('https://api-pwd.housecode.pl/proposals', options).subscribe(response => console.log(response.json()));
   }
 
-  putUser() {
-    const user = {
-      email: 'oo@oo',
-    isAdmin: false,
-    lastName: 'oo',
-    name: 'oo',
-    token: 'oo',
-    username: 'oo',
-    role: 'USER',
-      password: 'oo'
-    };
-    const headers = new Headers({'X-AUTH-TOKEN': localStorage.getItem('token')});
-    const options = new RequestOptions({ headers: headers });
-    return this.http.put(`${this.address}/accounts`, user, options);
+  getMockTress() {
+    return {
+
+    }
   }
-/*
-  signIn(body: { username: string, password: string }) {
+
+/*  signIn(body: { username: string, password: string }) {
     return this.http.post(`${this.address}/tokens`, body);
   }
 

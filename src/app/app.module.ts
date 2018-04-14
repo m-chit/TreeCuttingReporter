@@ -14,6 +14,7 @@ import {AuthService} from '../services/auth.service';
 import {UserService} from '../services/user.service';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TreesComponent } from './trees/trees.component';
+import {TreesService} from '../services/trees.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { TreesComponent } from './trees/trees.component';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [AuthService, UserService],
+  providers: [AuthService, UserService, TreesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

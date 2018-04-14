@@ -12,8 +12,8 @@ export class AppComponent  implements OnInit {
   constructor(private http: Http) {
   }
 
-  ngOnInit() { } /*
-    const headers = new Headers({'X-AUTH-TOKEN':'eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjM3ODA2MjEsInVzZXJuYW1lIjoiYWRtaW4ifQ.jWSN1Vjr6k_BRFJzECVSFZDCOQAwT36g4G12lDp_iYs'})
+  ngOnInit() {
+/*    const headers = new Headers({'X-AUTH-TOKEN':'eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjM3ODA2MjEsInVzZXJuYW1lIjoiYWRtaW4ifQ.jWSN1Vjr6k_BRFJzECVSFZDCOQAwT36g4G12lDp_iYs'})
     let options = new RequestOptions({ headers: headers });
     this.http.get('https://api-pwd.housecode.pl/accounts', options).subscribe(response => console.log(response.json()));
     this.http.get('https://api-pwd.housecode.pl/departments', options).subscribe(response => console.log(response.json()));
@@ -32,6 +32,6 @@ export class AppComponent  implements OnInit {
     lastName: 'Gdańsk',
     precinct: 'Gdańsk',
     latitude:  54.362583}, options).subscribe(response => console.log(response.json()));
-//this.http.post('https://api-pwd.housecode.pl/tokens', {username: 'admin', password: 'Madmin123'}).subscribe(response => console.log(response.json()));
-  }*/
+//this.http.post('https://api-pwd.housecode.pl/tokens', {username: 'admin', password: 'Madmin123'}).subscribe(response => console.log(response.json()));*/
+  }
 }
